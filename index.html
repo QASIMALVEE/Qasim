@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohd Qasim</title>
+  <meta name="description" content="Mohd Qasim is a final-year chemical engineering student at IIT Jodhpur who also writes software.">
+  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Mohd Qasim">
+  <meta property="og:description" content="Final-year chemical engineering student at IIT Jodhpur who also writes software.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <div class="wrap top__inner">
+      <a class="mark" href="#" aria-label="mq, Mohd Qasim, home">mq</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#software">Software</a>
+        <a href="#chemical">Chemical</a>
+        <a href="#about">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme" type="button" aria-label="Dark mode" aria-pressed="false">
+        <svg class="moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></g></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="name">
+      <div class="hero__top">
+        <div>
+          <p class="eyebrow">Chemical Engineering, IIT Jodhpur, 2027</p>
+          <h1 id="name">Mohd Qasim</h1>
+          <p class="lede">
+            I'm a final-year chemical engineering student at IIT Jodhpur who also writes software. I helped build AlgoLab,
+            a site that animates algorithms step by step, and built AI models of a reactor plant that found settings using
+            11.6% less heat. I'm looking for software and process engineering roles from 2027.
+          </p>
+          <ul class="links">
+            <li><a href="mailto:qasimallve786@gmail.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/mohd-qasim-09434a288" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/QASIMALVEE" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="/assets/Mohd_Qasim_Resume_Software.pdf" target="_blank" rel="noopener">Software résumé</a></li>
+            <li><a href="/assets/Mohd_Qasim_Resume_Chemical.pdf" target="_blank" rel="noopener">Chemical résumé</a></li>
+          </ul>
+        </div>
+        <picture class="portrait">
+          <source media="(max-width: 760px)" srcset="/assets/mohd-qasim-square.webp" width="480" height="480">
+          <img src="/assets/mohd-qasim.webp" width="720" height="900" alt="Mohd Qasim sitting in an armchair, smiling slightly" fetchpriority="high">
+        </picture>
+      </div>
+    </section>
+
+    <section id="software" class="section" aria-labelledby="software-h">
+      <h2 id="software-h" class="label">Software</h2>
+      <div class="body">
+        <article class="feature">
+          <header class="row">
+            <h3><a href="https://algolab.rajpurohit.me/" target="_blank" rel="noopener">AlgoLab, a DSA Visualizer <span class="arrow" aria-hidden="true">↗</span></a></h3>
+            <p class="when">Team project</p>
+          </header>
+          <p>
+            A website that animates more than 15 data structures and algorithms one step at a time. It covers 5 sorting
+            algorithms, 7 graph algorithms including BFS, Dijkstra, Bellman-Ford and Kruskal, and trees like BST, AVL and B-Tree.
+          </p>
+          <p class="muted">You can play, pause, step backwards and change the speed. Every comparison and swap is narrated as it happens, and each algorithm shows its time and space complexity. Each structure is its own module, so the team could build new ones in parallel. It uses Konva.js on a Ruby on Rails backend and ships in Docker.</p>
+          <ul class="tags"><li>JavaScript</li><li>Konva.js</li><li>Ruby on Rails</li><li>Docker</li></ul>
+          <p class="cert"><a href="https://github.com/RamcharanRajpurohit/DSAVisualizer" target="_blank" rel="noopener">Team repo <span class="arrow" aria-hidden="true">↗</span></a></p>
+        </article>
+
+        <ol class="list">
+          <li>
+            <div class="row">
+              <h3>Named Entity Recognition</h3>
+              <p class="when">Prof. Avinash Sharma</p>
+            </div>
+            <p>A model that finds named entities in raw text. I cleaned noisy token-level data and split it into sentences, built features from word shape, casing and length, and trained a Random Forest to tag each token. I scored it per entity type with precision, recall and F1, and plotted the results.</p>
+            <ul class="tags"><li>Python</li><li>scikit-learn</li><li>pandas</li><li>seaborn</li></ul>
+          </li>
+          <li>
+            <div class="row">
+              <h3><a href="https://github.com/QASIMALVEE/ICS_CP_-DARQ" target="_blank" rel="noopener">Pacman in C <span class="arrow" aria-hidden="true">↗</span></a></h3>
+              <p class="when">2023</p>
+            </div>
+            <p>A console Pacman game written in C as a four-person first-year course project. Arrow keys move Pacman, and ghosts and walls get in the way.</p>
+            <ul class="tags"><li>C</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="chemical" class="section" aria-labelledby="chemical-h">
+      <h2 id="chemical-h" class="label">Chemical</h2>
+      <div class="body">
+        <article class="feature">
+          <header class="row">
+            <h3>AI for a Reactor-Separator Process</h3>
+            <p class="when">Course project</p>
+          </header>
+          <p>
+            A full study of a plant with two stirred-tank reactors and a flash separator, done for Application of AI in
+            Chemical Engineering. I modelled it from first principles, trained AI models on it, then used them to optimise
+            and control the plant.
+          </p>
+          <figure class="pfd">
+            <svg viewBox="0 0 360 178" role="img" aria-labelledby="pfd-title">
+              <title id="pfd-title">Fresh feed A enters CSTR 1, which flows into CSTR 2 along with a second feed of A. CSTR 2 flows into a flash drum. Vapour from the top of the flash is recycled to CSTR 1, with a small purge, and liquid leaves from the bottom. Q1, Q2 and Q3 are the heat inputs.</title>
+              <defs>
+                <marker id="ah" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 8 4 0 8z"/></marker>
+              </defs>
+              <g class="ln" marker-end="url(#ah)">
+                <path d="M2 92H50"/>
+                <path d="M122 92H152"/>
+                <path d="M224 92H262"/>
+                <path d="M188 172V122"/>
+                <path d="M288 44V18H86V62"/>
+                <path d="M288 18H354"/>
+                <path d="M288 140V164H354"/>
+              </g>
+              <circle class="dot" cx="288" cy="18" r="2.5"/>
+              <rect class="vs" x="50" y="62" width="72" height="60" rx="6"/>
+              <rect class="vs" x="152" y="62" width="72" height="60" rx="6"/>
+              <rect class="vs" x="262" y="44" width="52" height="96" rx="26"/>
+              <text class="n" x="86" y="91" text-anchor="middle">CSTR 1</text>
+              <text class="n" x="188" y="91" text-anchor="middle">CSTR 2</text>
+              <text class="n" x="288" y="91" text-anchor="middle">Flash</text>
+              <text class="q" x="86" y="109" text-anchor="middle">Q<tspan dy="3" font-size="9">1</tspan></text>
+              <text class="q" x="188" y="109" text-anchor="middle">Q<tspan dy="3" font-size="9">2</tspan></text>
+              <text class="q" x="288" y="109" text-anchor="middle">Q<tspan dy="3" font-size="9">3</tspan></text>
+              <text x="2" y="82">Feed A</text>
+              <text x="196" y="166">Feed A</text>
+              <text x="187" y="12" text-anchor="middle">Recycle</text>
+              <text x="322" y="12" text-anchor="middle">Purge</text>
+              <text x="322" y="158" text-anchor="middle">Bottoms</text>
+            </svg>
+            <figcaption>The plant. The models learn how the heat inputs Q<sub>1</sub>, Q<sub>2</sub> and Q<sub>3</sub> change the temperatures and compositions in all three vessels.</figcaption>
+          </figure>
+          <figure class="diagram" aria-label="Four stages: model the plant, learn a surrogate, optimise with a genetic algorithm, control with MPC">
+            <div class="layer"><span class="k">01</span><span>Model</span><span class="v">Mass and energy balances that match the published steady state to 4&nbsp;decimal places</span></div>
+            <div class="layer"><span class="k">02</span><span>Learn</span><span class="v">A neural network trained on 2,000 simulated steady states, R² 0.988 on held-out data</span></div>
+            <div class="layer"><span class="k">03</span><span>Optimise</span><span class="v">A genetic algorithm found settings that use 11.6% less heat for nearly the same output</span></div>
+            <div class="layer"><span class="k">04</span><span>Control</span><span class="v">An AI controller tracked setpoint changes with less error than a tuned PI&nbsp;loop</span></div>
+          </figure>
+          <p class="muted">It also showed where the AI falls short. The PI loop still handled a sudden drop in feed temperature better, and the learned dynamic model drifts when it predicts far ahead.</p>
+          <ul class="tags"><li>Python</li><li>SciPy</li><li>scikit-learn</li><li>Fuzzy models</li><li>Genetic algorithm</li><li>MPC</li></ul>
+        </article>
+
+        <ol class="list">
+          <li>
+            <div class="row">
+              <h3>Catalytic Synthesis of <span class="nowrap">4-Methoxypropiophenone</span></h3>
+              <p class="when">Prof. Sumit Kamal</p>
+            </div>
+            <p>Helped make 4-methoxypropiophenone by Friedel-Crafts acylation of anisole with propionic anhydride, using Amberlyst-15 as a solid acid catalyst.</p>
+            <ul class="points">
+              <li>Ran the reaction in a temperature-controlled four-neck glass reactor with steady stirring.</li>
+              <li>Took samples over time to track how much product formed at different catalyst loadings.</li>
+            </ul>
+            <ul class="tags"><li>Heterogeneous catalysis</li><li>Batch reactor</li><li>Amberlyst-15</li></ul>
+          </li>
+          <li>
+            <div class="row">
+              <h3>Zeolite from Rice Husk for Clean Water</h3>
+              <p class="when">Prof. Sumit Kamal</p>
+            </div>
+            <p>Made zeolite from rice husk, a cheap source of silica, through a hydrothermal process. I characterised it with XRD, SEM and FTIR, then tested how well it removes fluoride from drinking water.</p>
+            <ul class="tags"><li>Hydrothermal synthesis</li><li>XRD</li><li>SEM</li><li>FTIR</li><li>Adsorption</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-h">
+      <h2 id="about-h" class="label">Education</h2>
+      <div class="body">
+        <div class="row">
+          <h3>Indian Institute of Technology Jodhpur</h3>
+          <p class="when">2023 to 2027</p>
+        </div>
+        <p>B.Tech in Chemical Engineering</p>
+        <p class="muted">Chemical engineering courses: Fluid Mechanics, Thermodynamics, Mass Transfer, Material and Energy Balance, Chemical Reaction Engineering, Molecular Engineering, Quantum Chemistry and Spectroscopy.</p>
+        <p class="muted">Also took: Introduction to Computer Science, Introduction to Machine Learning, Linear Algebra and Differential Equations, Probability and Statistics.</p>
+        <div class="row gap">
+          <h3>Jawahar Navodaya Vidyalaya, Budgam</h3>
+          <p class="when">2022</p>
+        </div>
+        <p>Class XII, CBSE</p>
+        <div class="row gap">
+          <h3>Mutahhary Public High School, Kargil</h3>
+          <p class="when">2020</p>
+        </div>
+        <p>Class X, JKBOSE</p>
+        <div class="row gap">
+          <h3>Entrance exams</h3>
+          <p class="when">2023</p>
+        </div>
+        <p>All India ST rank 1095 in JEE Advanced 2023, among about 1.2 lakh candidates. Also cleared the Kashmir Super 50 entrance exam, run by CSRL.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="skills-h">
+      <h2 id="skills-h" class="label">Toolkit</h2>
+      <div class="body">
+        <dl class="skills">
+          <div><dt>Languages</dt><dd>C, C++, Python, JavaScript</dd></div>
+          <div><dt>Web</dt><dd>HTML, CSS, JavaScript (ES6), Konva.js, Ruby on Rails, Flask</dd></div>
+          <div><dt>ML</dt><dd>scikit-learn, PyTorch, TensorFlow, Keras, pandas, seaborn</dd></div>
+          <div><dt>Tools</dt><dd>Git, GitHub, Docker, Aspen Plus</dd></div>
+          <div><dt>Lab</dt><dd>Batch reactors, catalysis, XRD, SEM, FTIR</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Hiring for software or process engineering? I'd like to hear from you.</h2>
+      <a class="email" href="mailto:qasimallve786@gmail.com">qasimallve786@gmail.com</a>
+      <ul class="links">
+        <li><a href="/assets/Mohd_Qasim_Resume_Software.pdf" target="_blank" rel="noopener">Software résumé</a></li>
+        <li><a href="/assets/Mohd_Qasim_Resume_Chemical.pdf" target="_blank" rel="noopener">Chemical résumé</a></li>
+        <li><a href="https://www.linkedin.com/in/mohd-qasim-09434a288" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div class="foot">
+      <p>© <span id="y">2026</span> Mohd Qasim</p>
+      <p>From Kargil, Ladakh</p>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
